@@ -132,10 +132,11 @@ footer p {
 }
 
 main .log-land {
+    flex-wrap: wrap;
     margin-top: 10px;
     display: flex;
     flex-direction: column;
-    width: max-content;
+    width: auto;
     padding: 30px;
     background-color: #411530d5;
     border-radius: 10px;
