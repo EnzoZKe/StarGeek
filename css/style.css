@@ -102,4 +102,67 @@ footer{
 footer p {
     font-size: 20px;
 }
-/*parte do index*/
+/*parte da landpage*/
+
+main .log-land {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    padding: 30px;
+    background-color: #411530d5;
+    border-radius: 10px;
+}
+
+main .log-land h1 {
+    display: flex;
+    color: white;
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+main .log-land p {
+    display: flex;
+    color: white;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+main .log-land input {
+    display: flex;
+    width: fit-content;
+    margin-bottom: 20px;
+}
+
+main .log-land a {
+    text-decoration: none;
+    display: flex;
+    width: fit-content;
+}
+
+main .spaces {
+    display: flex;
+    
+}
+
+.conteudos {
+    text-align: center;
+    padding: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudos h1 {
+    font-size: 70px;
+}
+
+main .conteudos .separa {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+main .conteudos .separa #mega {
+    width: 600px;
+}
