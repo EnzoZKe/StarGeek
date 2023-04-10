@@ -3,4 +3,103 @@
     border: none;
     padding: 0;
     box-sizing: border-box;
+    font-family: arial;
 }
+
+::placeholder {
+    color: black;
+}
+
+/*parte dos logins*/
+
+body{
+    background-image: url(../img/background.png);
+    background-color: #F5E8E4;
+}
+
+header{
+    display: flex;
+    background-color: #E6D5B8;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.botao{
+    background-color: #D1512D;
+    color: white;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 12px;
+    font-size: 20px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+main .logis {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    padding: 30px;
+    background-color: #411530d5;
+    border-radius: 10px;
+}
+
+main ul {
+    list-style-type: none;
+}
+
+main li {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+main li p {
+    font-size: 30px;
+    color: white;
+}
+
+main li input {
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 2px;
+    background-color: #9F9F9F;
+}
+
+main li a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+main img {
+    display: flex;
+    width: 200px;
+    margin: auto;
+}
+
+footer img {
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    margin: 15px;
+    height: 170px;
+    border:2px solid black;
+    background-size: contain;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    font-size: 20px;
+}
+/*parte do index*/
