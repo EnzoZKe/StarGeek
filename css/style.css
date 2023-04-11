@@ -1,25 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@700&display=swap');
+
 *{
     margin: 0;
     border: none;
     padding: 0;
     box-sizing: border-box;
-    font-family: arial;
+    font-family: 'Josefin Slab', serif; ;
 }
 
 ::placeholder {
     color: black;
 }
 
-/*parte dos logins*/
+hr{
+    width: 100%;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), #411530d5, rgba(255, 255, 255, 0));
+}
 
 body{
     background-image: url(../img/background.png);
-    background-color: #F5E8E4;
+    background-color: #8d766f;
 }
-
+/*parte dos logins*/
 header{
     display: flex;
-    background-color: #E6D5B8;
+    background-color: #998b72;
     justify-content: space-between;
     align-items: center;
     padding: 5px;
@@ -35,7 +41,9 @@ header{
     border-radius: 12px;
     font-size: 20px;
 }
+
 .botao:hover{
+    box-shadow: 0px 0px 12px black;
     transition: 300ms;
     background-color: #A73F22;
     color: white;
@@ -84,13 +92,13 @@ main li input {
 }
 
 main li input:hover {
+    box-shadow: 0px 0px 12px black;
     transition: 200ms;
     font-size: 20px;
     border-radius: 5px;
     padding: 2px;
     background-color: #6d6d6d;
 }
-
 
 main li a {
     font-size: 20px;
@@ -114,15 +122,31 @@ footer img {
     background-size: contain;
 }
 
+/*Parte do footer*/
+
 footer{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 footer p {
     font-size: 20px;
 }
+
+footer ul {
+    list-style-type: none;
+}
+
+footer li {
+    margin-bottom: 15px;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
 /*parte da landpage*/
 .principal-land{
     display: flex;
@@ -173,14 +197,10 @@ main h1 {
     font-size: 100px;
 }
 
-main .offer {
+.offer{
+    justify-content: space-around;
     display: flex;
     padding: 15px;
-}
-
-.offer{
-    justify-content: space-between;
-    display: flex;
 }
 
 main .offer .mega {
@@ -227,6 +247,37 @@ main .offer .mega {
     font-weight: 700
 }
 
+.lolja{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lolja img {
+    transition: 300ms;
+    width: 600px;
+}
+
+.music{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.music img {
+    transition: 300ms;
+    width: 100px;
+}
+
+.music img:hover {
+    transition: 300ms;
+    width: 300px;
+}
+
+.music p {
+    font-size: 30px;
+}
+
 /*parte dos filmes*/
 .selecione{
     overflow: scroll;
@@ -252,3 +303,27 @@ main .offer .mega {
     width: fit-content;
     
 }
+
+/*Parte da loja*/
+
+.centro{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    font-size: 50px;
+}
+
+.selecione{
+    overflow: scroll;
+    padding: 10px;
+    display: flex;
+    margin: 10px;
+    margin-bottom: 35px;
+    background-color: #411530;
+}
+
+.selecione .prod {
+    width: 400px;
+}
+
+/*Parte do Perfil*/
