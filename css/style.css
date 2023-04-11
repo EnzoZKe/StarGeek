@@ -201,6 +201,7 @@ main h1 {
 .offer{
     justify-content: space-around;
     display: flex;
+    flex-wrap: wrap;
     padding: 15px;
 }
 
