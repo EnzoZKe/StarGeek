@@ -30,6 +30,9 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 5px;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .botao{
@@ -280,6 +283,12 @@ main .offer .mega {
     font-size: 30px;
 }
 
+.produtos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
 /*parte dos filmes*/
 .selecione{
     overflow: scroll;
@@ -293,6 +302,7 @@ main .offer .mega {
 
 .selecione::-webkit-scrollbar{
     display: none;
+
 }
 
 .selecione img {
@@ -318,6 +328,7 @@ main .offer .mega {
 }
 .selecione .item:hover .overlay {
     display: block;
+    width: 500px;
 }
 
 .selecione .item:hover .overlay2 {
@@ -383,3 +394,5 @@ main .offer .mega {
   .sticky + .content {
     padding-top: 102px;
   }
+
+  
