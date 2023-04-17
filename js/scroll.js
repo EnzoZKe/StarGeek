@@ -1,3 +1,5 @@
+/*Mover os filmes com o mouse*/
+
 const slider = document.querySelectorAll('.selecione');
 let isDown = false;
 let startX;
@@ -29,3 +31,18 @@ slider.forEach(Slid =>{
         console.log(walk);
     });
 })
+
+/*deixar o header no topo*/
+
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
