@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="\StarGeek\css\style.css">
 </head>
 <body>
-    <header>
+    <header id="myHeader">
         <img src="\StarGeek\img\geek.png" alt="" class="a">
             <div>
                 <a href="\StarGeek\landpage.html"><input type="button" name="" class="botao" value="Voltar"></a>
@@ -21,6 +21,7 @@
         <div class="logis">
             <ul>
                 <img src="../StarGeek/img/good-person-icon.png" alt="">
+                <li><p>_Seu nome_</p></li>
                 <li><p>Mude seu nome</p></li>
                 <li><input type="text" name="Novo nome" class="logs" placeholder="Insira novo nome">
                 <li><input type="password" name="Senha" class="logs" placeholder="Senha"></li>
@@ -32,9 +33,7 @@
         </div>
         
     </main>
-    <!--<div class="not-sus">
-        <a href="https://www.youtube.com/watch?v=pXZUGtqtsdQ&ab_channel=arthur_gamer" target="_blank"><img src="https://play-lh.googleusercontent.com/WbXF7Z5wMYS14qigU0IuchZgh43AFzQMzfZ0vef283sQITZhEZO4Wk7C1iq7VhIJ0rz6" alt=""></a>
-    </div>-->
+   
     <hr>
     <footer>
         <div>
@@ -51,5 +50,20 @@
                     </ul>
                 </div>
     </footer>
-</body>
+
+    </body>
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+    </script>
 </html>

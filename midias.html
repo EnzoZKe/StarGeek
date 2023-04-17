@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="\StarGeek\css\style.css">
 </head>
 <body>
-    <header>
+    <header id="myHeader">
         <img src="\StarGeek\img\geek.png" alt="" class="a">
             <div>
                 <a href="\StarGeek\profile.html"><input type="button" name="" class="botao" value="Voltar"></a>
@@ -35,4 +35,18 @@
                     </ul>
                 </div>
 </body>
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+</script>
 </html>

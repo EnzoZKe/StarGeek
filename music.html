@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="\StarGeek\css\style.css">
 </head>
 <body>
-    <header>
+    <header id="myHeader">
         <img src="\StarGeek\img\geek.png" alt="">
             <div>
                 <a href="\StarGeek\landpage.html"><input type="button" name="" class="botao" value="Voltar"></a>
@@ -59,9 +59,6 @@
             <img src="https://upload.wikimedia.org/wikipedia/en/b/bd/Metallica_-_...And_Justice_for_All_cover.jpg" alt="" class="prod">
 
             <img src="https://a-static.mlcdn.com.br/800x560/cd-metallica-master-of-puppets-acrilico-univer/maiadiscdistribuidoracdsdvs/14867613832/4ff5557a657c78d8dd20d1ac65003ac7.jpg" alt="" class="prod">
-
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"><img src="../StarGeek/img/secret.gif" alt="" class="prod"></a>
-
         </div>
     </main>
     <hr>
@@ -81,4 +78,20 @@
                 </div>
     </footer>
 </body>
+
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+</script>
+
 </html>

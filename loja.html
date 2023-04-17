@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="../StarGeek/img/favicon.ico">
 </head>
 <body>
-    <header>
+    <header id="myHeader">
         <img src="\StarGeek\img\geek.png" alt="">
             <div>
                 <a href="\StarGeek\landpage.html"><input type="button" name="" class="botao" value="Voltar"></a>
@@ -32,6 +32,7 @@
 
             <img src="https://static.bimago.pl/mediacache/catalog/product/cache/5/4/95945/image/750x1120/b91940c413613f0437dd05c5e4345aec/95945_1.jpg" alt="" class="prod">
 
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIM1QyZTjqeUgBQGCZz4_ItTpKkx4aEtsVeRSUhhlTlSDN3CiIqFsFLIf8SKRVj4Vq_YQ&usqp=CAU" alt="" class="prod">
         </div>
 
         <div>
@@ -57,4 +58,19 @@
     </footer>
 
 </body>
+
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+</script>
 </html>
