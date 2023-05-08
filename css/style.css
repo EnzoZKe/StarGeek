@@ -19,14 +19,16 @@ hr{
 }
 
 body{
-    background-image: url(../img/background.png);
-    background-color: #8d766f;
-
+    background-image: url(../img/back2.png);
+    background-color: #b89f97;
 }
+
+
+
 /*parte dos logins*/
 header{
     display: flex;
-    background-color: #998b72;
+    background-color: #bfae91;
     justify-content: space-between;
     align-items: center;
     padding: 5px;
