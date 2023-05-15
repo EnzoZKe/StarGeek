@@ -8,6 +8,54 @@
     font-family: 'Josefin Slab', serif; ;
 }
 
+@media (max-width:600px) {
+    header{
+        width: 440px;
+    }
+    .principal-land .log-land {
+        width: min-content;
+    }
+
+    .principal-land h1 {
+        font-size: 60px;
+    }
+
+    .produtos .lolja img {
+        width: 300px;
+    }
+
+    .texto-cartaz1 p {
+        font-size: 30px;
+    }
+
+    .texto-cartaz2 p {
+        font-size: 30px;
+    }
+
+    .texto-cartaz1 div img {
+        width: 150px;
+    }
+
+    .texto-cartaz1 div img:hover{
+        width: 250px;
+    }
+
+    .texto-cartaz2 div img {
+        width: 150px;
+    }
+
+    .texto-cartaz2 div img:hover{
+        width: 250px;
+    }
+
+    .divizaco{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 ::placeholder {
     color: black;
 }
