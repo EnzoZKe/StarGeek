@@ -8,6 +8,9 @@
     font-family: 'Josefin Slab', serif; ;
 }
 
+
+
+
 @media (max-width:600px) {
     header{
         width: 440px;
