@@ -57,6 +57,23 @@
         align-items: center;
         justify-content: center;
     }
+
+    header{
+        width: 100%;
+    }
+
+    .offer img {
+        width: 100px;
+    }
+
+    .offer .mega{
+        width: 300px;
+    }
+
+    .thx img{
+        width: 200px;
+        height: 150px;
+    }
 }
 
 ::placeholder {
