@@ -1,20 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@700&display=swap');
 
-*{
+* {
     margin: 0;
     border: none;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Josefin Slab', serif; ;
+    font-family: 'Josefin Slab', serif;
+    ;
 }
 
-.people{
+.people {
     background-color: #411530;
     padding: 10px;
     border-radius: 10px;
 }
 
-.people h2{
+.people h2 {
     color: white;
 }
 
@@ -24,9 +25,10 @@
 
 
 @media (max-width:600px) {
-    header{
+    header {
         width: 440px;
     }
+
     .principal-land .log-land {
         width: min-content;
     }
@@ -51,7 +53,7 @@
         width: 150px;
     }
 
-    .texto-cartaz1 div img:hover{
+    .texto-cartaz1 div img:hover {
         width: 250px;
     }
 
@@ -59,18 +61,18 @@
         width: 150px;
     }
 
-    .texto-cartaz2 div img:hover{
+    .texto-cartaz2 div img:hover {
         width: 250px;
     }
 
-    .divizaco{
+    .divizaco {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
 
-    header{
+    header {
         width: 100%;
     }
 
@@ -78,11 +80,11 @@
         width: 100px;
     }
 
-    .offer .mega{
+    .offer .mega {
         width: 300px;
     }
 
-    .thx img{
+    .thx img {
         width: 200px;
         height: 150px;
     }
@@ -92,13 +94,13 @@
     color: black;
 }
 
-hr{
+hr {
     width: 100%;
     height: 2px;
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0), #411530d5, rgba(255, 255, 255, 0));
 }
 
-body{
+body {
     background-image: url(../img/back2.png);
     background-color: #b89f97;
 }
@@ -106,7 +108,7 @@ body{
 
 
 /*parte dos logins*/
-header{
+header {
     display: flex;
     background-color: #bfae91;
     justify-content: space-between;
@@ -114,7 +116,7 @@ header{
     padding: 5px;
 }
 
-.botao{
+.botao {
     transition: 300ms;
     background-color: #D1512D;
     color: white;
@@ -125,7 +127,7 @@ header{
     font-size: 20px;
 }
 
-.botao:hover{
+.botao:hover {
     box-shadow: 0px 0px 12px black;
     transition: 300ms;
     background-color: #A73F22;
@@ -137,7 +139,7 @@ header{
     font-size: 20px;
 }
 
-.principal{
+.principal {
     display: flex;
     justify-content: center;
     margin: 10px;
@@ -202,13 +204,13 @@ footer img {
     margin-top: 100px;
     margin: 15px;
     height: 170px;
-    border:2px solid black;
+    border: 2px solid black;
     background-size: contain;
 }
 
 /*Parte do footer*/
 
-footer{
+footer {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -232,7 +234,7 @@ footer a {
 }
 
 /*parte da landpage*/
-.principal-land{
+.principal-land {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -281,7 +283,7 @@ main h1 {
     font-size: 100px;
 }
 
-.offer{
+.offer {
     justify-content: space-around;
     display: flex;
     flex-wrap: wrap;
@@ -292,11 +294,11 @@ main .offer .mega {
     width: 600px;
 }
 
-.texto-cartaz1{
+.texto-cartaz1 {
     display: flex;
     margin-top: 20px;
     margin-left: 15px;
-    justify-content:flex-start;
+    justify-content: flex-start;
     align-items: center;
     font-size: 50px;
     font-weight: 700
@@ -322,17 +324,17 @@ main .offer .mega {
     width: 500px;
 }
 
-.texto-cartaz2{
+.texto-cartaz2 {
     display: flex;
     margin-top: 20px;
     margin-right: 15px;
-    justify-content:flex-end;
+    justify-content: flex-end;
     align-items: center;
     font-size: 50px;
     font-weight: 700
 }
 
-.lolja{
+.lolja {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -343,7 +345,7 @@ main .offer .mega {
     width: 600px;
 }
 
-.music{
+.music {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -363,14 +365,14 @@ main .offer .mega {
     font-size: 30px;
 }
 
-.produtos{
+.produtos {
     display: flex;
     justify-content: space-around;
     align-items: center;
-  }
+}
 
 /*parte dos filmes*/
-.selecione{
+.selecione {
     overflow: scroll;
     padding: 10px;
     display: flex;
@@ -380,7 +382,7 @@ main .offer .mega {
     max-height: 420px;
 }
 
-.selecione::-webkit-scrollbar{
+.selecione::-webkit-scrollbar {
     display: none;
 
 }
@@ -391,21 +393,28 @@ main .offer .mega {
     width: 250px;
 }
 
-.watch{
+.watch {
     padding: 5px;
     margin: 15px;
     font-size: 40px;
     border-radius: 15px;
     background-color: #d1512dcd;
     width: fit-content;
-    
+
 }
 
-.selecione .item {cursor: pointer;}
-.selecione .item .overlay {display: none;}
+.selecione .item {
+    cursor: pointer;
+}
+
+.selecione .item .overlay {
+    display: none;
+}
+
 .selecione .item:hover img {
     display: none;
 }
+
 .selecione .item:hover .overlay {
     display: block;
     width: 500px;
@@ -417,16 +426,17 @@ main .offer .mega {
     top: -80px;
     background-color: rgba(255, 255, 255, 0.481);
 }
+
 /*Parte da loja*/
 
-.centro{
+.centro {
     display: flex;
     justify-content: center;
     margin-top: 15px;
     font-size: 50px;
 }
 
-.selecione{
+.selecione {
     overflow: scroll;
     padding: 10px;
     display: flex;
@@ -441,21 +451,21 @@ main .offer .mega {
 
 /*Parte da midia*/
 
-#lil_fix{
+#lil_fix {
     margin-bottom: 10px;
 }
 
-.main_upload{
+.main_upload {
     display: flex;
 }
 
-.inpADD{
+.inpADD {
     width: 90%;
     height: 30px;
     margin-bottom: 10px;
 }
 
-.midia{
+.midia {
     display: flex;
     flex-direction: column;
     border: 2px solid black;
@@ -468,11 +478,11 @@ main .offer .mega {
 
 /*Parte do perfil*/
 
-.pfp{
+.pfp {
     width: 40px;
 }
 
-.des{
+.des {
     background-color: #D1512D;
     color: white;
 }
@@ -483,8 +493,27 @@ main .offer .mega {
     position: fixed;
     top: 0;
     width: 100%;
-  }
-  
-  .sticky + .content {
+}
+
+.sticky+.content {
     padding-top: 102px;
-  }  
+}
+
+/*! poster*/
+.titulo{
+    color: yellow;
+    text-shadow: 2px 0 #000000, -2px 0 #000000, 0 2px #000000, 0 -2px #000000,
+               1px 1px #000000, -1px -1px #000000, 1px -1px #000000, -1px 1px #000000;
+    margin-top: -60px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.poster{
+    height:350px;
+}
+
+.poster .poster_img{
+    width: 250px;
+    height: 350px;
+}

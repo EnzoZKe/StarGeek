@@ -27,6 +27,9 @@ function adiciona() {
     listaFilmes.push(dadosFilme)
     //console.log(listaFilmes);
     localStorage.setItem('dadosFilme', JSON.stringify(listaFilmes))
+
+    alert("tudo certo, obrigado por sua contribuição!")
+    window.location="movies.html"
 }
 
 function limpaPFV(){

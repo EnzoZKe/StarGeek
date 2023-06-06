@@ -9,10 +9,17 @@ if (mostraFilmes == null) {
 console.log(mostraFilmes);
 
 for (i in mostraFilmes) {
-    document.getElementById("New").innerHTML += `<img src="${mostraFilmes[i].imagem}" alt="" onmouseenter="hover(${i})" onmouseleave="noHover(${i})">`
+    
+    document.getElementById("New").innerHTML += 
+    
+    `<div class="poster" >
+        <img src="${mostraFilmes[i].imagem}" alt="" class="poster_img" onmouseenter="hover(${i})" onmouseleave="noHover(${i})">
+        <p id="write" class="titulo" >${mostraFilmes[i].nome}</p>
+      </div>
+    `
 }
 
-console.log(mostraFilmes);
+//console.log(mostraFilmes);
 
 function hover(i_) {
     for (i in mostraFilmes) {
@@ -32,6 +39,7 @@ function noHover(i_) {
             var imgs = new_.getElementsByTagName('img')[i]
 
             imgs.src = mostraFilmes[i].imagem
+            
         }
     }
 }
