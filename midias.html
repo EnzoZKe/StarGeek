@@ -6,25 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Midias</title>
-    <link rel="shortcut icon" href="../StarGeek/img/favicon.ico">
-    <link rel="stylesheet" href="css\style.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header id="myHeader">
         <img src="img\geek.png" alt="" class="a">
         <div>
-            <a href="/StarGeek/index.html"><input type="button" name="" class="botao" value="Voltar"></a>
+            <a href="profile.html"><input type="button" name="" class="botao" value="Voltar"></a>
         </div>
     </header>
-    <main>
-        <div class="midia"><input type="file" name="" id=""><img src="img\upload.png" alt=""></div>
 
+    <main class="main_upload">
+        <div class="midia">
+            <input type="text" id="NomeFilme" placeholder="Coloque o nome do Filme" class="inpADD"> 
+
+            <input type="number" name="" id="AnoFilme" placeholder="Coloque o ano do filme" class="inpADD">
+
+            <input type="text" id="LinkIMGfilme" placeholder="Coloque o link da capa do filme" class="inpADD">
+
+            <input type="text" id="LinkGIFfilme" placeholder="Coloque o link de um gif do filme" class="inpADD">
+        </div>
+
+        <div class="midia">
+            <input type="text" name="" id="FilmeDesc" placeholder="Coloque a descrição do filme" class="inpADD">
+        </div>
     </main>
+        <button onclick="adiciona()" class="botao" id="lil_fix">Adicionar Midia</button>
+
+        <button onclick="limpaPFV()" class="botao" id="lil_fix">Limpar Tudo</button>
     <hr>
     <footer>
         <div>
-            <img src="../StarGeek/img/thumbs-up-footer.jpg" alt="">
+            <img src="img/thumbs-up-footer.jpg" alt="">
             <p>Agradecemos por utilizar nosso site!!</p>
         </div>
         <div class="politcs">
@@ -47,6 +62,6 @@
             </ul>
         </div>
 </body>
-
+<script src="js/midias_add.js"></script>
 
 </html>

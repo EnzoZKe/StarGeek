@@ -7,14 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StarGeek Login</title>
     <link rel="stylesheet" href="css\style.css">
-    <link rel="shortcut icon" href="../StarGeek/img/favicon.ico">
+    <link rel="shortcut icon" href="img/favicon.ico">
 </head>
 
 <body>
     <header>
         <img src="img\geek.png" alt="">
         <div>
-            <a href="/StarGeek/index.html"><input type="button" name="" class="botao" value="Voltar"></a>
+            <a href="index.html"><input type="button" name="" class="botao" value="Voltar"></a>
         </div>
     </header>
     <main class="principal">
@@ -23,20 +23,22 @@
                 <li>
                     <p>Faça login na sua conta!</p>
                 </li>
-                <li><input type="email" name="" class="logs" placeholder="Email"></li>
-                <li><input type="password" name="" class="logs" placeholder="Senha"></li>
+                <li><input type="email" name="" class="logs" placeholder="Email" id="confMail"></li>
+                <li><input type="password" name="" class="logs" placeholder="Senha" id="confSenha"></li>
                 <li>
                     <p>Faça login e seja feliz!</p>
                 </li>
-                <li><a href="profile.html"><input type="button" name="" class="botao" value="Entrar"></a></li>
+                <li><input type="button" name="" class="botao" value="Entrar" onclick="entre()"></li>
                 <li><a href="creat-acc.html">não tem conta? crie aqui</a></li>
             </ul>
         </div>
     </main>
+
     <hr>
+
     <footer>
         <div>
-            <img src="../StarGeek/img/thumbs-up-footer.jpg" alt="">
+            <img src="img/thumbs-up-footer.jpg" alt="">
             <p>Agradecemos por utilizar nosso site!!</p>
         </div>
         <div class="politcs">
@@ -60,6 +62,6 @@
         </div>
     </footer>
 </body>
-
+<script src="js/scroll.js"></script>
 
 </html>
