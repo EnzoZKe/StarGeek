@@ -208,6 +208,33 @@ footer img {
     background-size: contain;
 }
 
+#uploads{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 60px;
+    background-color: #D1512D;
+    color: white;
+    padding: 5px;
+    width: 100%;
+}
+
+.up{
+    width: 550px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.up img {
+    width: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    border: 5px solid black;
+}
+
 /*Parte do footer*/
 
 footer {
