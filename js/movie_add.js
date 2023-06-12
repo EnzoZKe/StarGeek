@@ -3,45 +3,55 @@ var mostraFilmes = []
 mostraFilmes = JSON.parse(localStorage.getItem('dadosFilme'))
 
 if (mostraFilmes == null) {
-    mostraFilmes = []
+  mostraFilmes = []
 }
 
 console.log(mostraFilmes);
 
 for (i in mostraFilmes) {
-    
-    document.getElementById("New").innerHTML += 
-    
-    `<div class="poster" >
-        <img src="${mostraFilmes[i].imagem}" alt="" class="poster_img" onmouseenter="hover(${i})" onmouseleave="noHover(${i})">
-        <p id="write" class="titulo" >${mostraFilmes[i].nome}</p>
-      </div>
-    `
+
+  document.getElementById("New").innerHTML +=
+
+    `<a href="${mostraFilmes[i].Link_Do_Filme}" target="_blank">
+        <div class="poster" >
+            <img src="${mostraFilmes[i].imagem}" alt="" class="poster_img" onmouseenter="hover(${i})" onmouseleave="noHover(${i})">
+            <p id="write" class="titulo" >${mostraFilmes[i].nome}</p>
+          <a>
+          <img src="https://cdn-icons-png.flaticon.com/512/2891/2891067.png" class="lixo" onclick="limpar()">
+        </div>`
 }
 
 //console.log(mostraFilmes);
 
 function hover(i_) {
-    for (i in mostraFilmes) {
-        if (i == i_) {
-            var new_ = document.getElementById("New")
-            var imgs = new_.getElementsByTagName('img')[i]
+  for (i in mostraFilmes) {
+    if (i == i_) {
+      var new_ = document.getElementById("New")
+      var imgs = new_.getElementsByTagName('img')[i]
 
-            imgs.src = mostraFilmes[i].gif
-        }
+
+      imgs.src = mostraFilmes[i].gif
+
+
+
     }
+  }
 }
 
 function noHover(i_) {
-    for (i in mostraFilmes) {
-        if (i == i_) {
-            var new_ = document.getElementById("New")
-            var imgs = new_.getElementsByTagName('img')[i]
+  for (i in mostraFilmes) {
+    if (i == i_) {
 
-            imgs.src = mostraFilmes[i].imagem
-            
-        }
+      var new_ = document.getElementById("New")
+      var imgs = new_.getElementsByTagName('img')[i]
+      imgs.src = mostraFilmes[i].imagem
     }
+  }
+}
+
+function limpar(pos) {
+  mostraFilmes.splice(pos, 1)
+  localStorage.setItem('dadosFilme', JSON.stringify)
 }
 
 

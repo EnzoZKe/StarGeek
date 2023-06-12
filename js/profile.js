@@ -1,18 +1,14 @@
 var dadosUsuario = []
-
-dadosUsuario = JSON.parse(localStorage.getItem('novosDados'))
-
-if (dadosUsuario != ""){
-    for (i in dadosUsuario){
-        document.getElementById("pfp").innerHTML = `<img src="${dadosUsuario[i].fotoNova}" alt="">`
-        document.getElementById("userName").innerHTML = `<p>${dadosUsuario[i].nomeNovo}</p>`
-    }
-}
+dadosUsuario = JSON.parse(localStorage.getItem('dodosLogin'))
 
 if (dadosUsuario == null){
     dadosUsuario = []
 }
 
+var DadosNew = []
+DadosNew = JSON.parse(localStorage.getItem('novosDados'))
+
+//!-----------------------------------------------------------------------------------------------------------------
 
 /*if (localStorage.getItem('usuarioLogado') != "") {
     document.getElementById("userName").innerHTML = `${localStorage.getItem('usuarioLogado')}`
@@ -38,13 +34,9 @@ function novosDados() {
         'fotoNova': newPFP
     }
 
-    dadosUsuario.push(newDados)
-    localStorage.setItem('novosDados', JSON.stringify(dadosUsuario))
-
-
+    DadosNew.push(newDados)
+    localStorage.setItem('novosDados', JSON.stringify(DadosNew))
 }
-
-
 
 
 
@@ -58,5 +50,3 @@ function novosDados() {
 
     localStorage.setItem('dodosLogin', JSON.stringify(dadosUsuario))
 } */
-
-

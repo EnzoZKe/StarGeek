@@ -88,6 +88,18 @@
         width: 200px;
         height: 150px;
     }
+
+    .logis #uploads {
+        width: 250px;
+        font-size: 20px;
+    }
+
+    .logis{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 ::placeholder {
@@ -531,16 +543,26 @@ main .offer .mega {
     color: yellow;
     text-shadow: 2px 0 #000000, -2px 0 #000000, 0 2px #000000, 0 -2px #000000,
                1px 1px #000000, -1px -1px #000000, 1px -1px #000000, -1px 1px #000000;
-    margin-top: -60px;
     text-align: center;
     font-size: 30px;
+    position: relative;
+    top: -100px;
 }
 
 .poster{
     height:350px;
+    width: 250px;
+    margin-left: 10px;
 }
 
 .poster .poster_img{
     width: 250px;
     height: 350px;
+}
+
+.selecione .lixo{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: -340px
 }
