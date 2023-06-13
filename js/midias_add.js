@@ -10,7 +10,6 @@ function adiciona() {
     var nomeFilme = document.getElementById("NomeFilme").value
     var anoFilme = document.getElementById("AnoFilme").value
     var IMGfilme = document.getElementById("LinkIMGfilme").value
-    var descFilme = document.getElementById("FilmeDesc").value
     var gifFilme = document.getElementById("LinkGIFfilme").value
     var LinkDoFilme = document.getElementById("LinkDoFilme").value
 
@@ -20,7 +19,6 @@ function adiciona() {
         'nome': nomeFilme,
         'ano': anoFilme,
         'imagem': IMGfilme,
-        'descricao': descFilme,
         'gif': gifFilme,
         'Link_Do_Filme': LinkDoFilme
     }

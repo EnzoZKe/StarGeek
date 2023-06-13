@@ -12,11 +12,11 @@ for (i in mostraFilmes) {
 
   document.getElementById("New").innerHTML +=
 
-    `<a href="${mostraFilmes[i].Link_Do_Filme}" target="_blank">
+    `<a href="${mostraFilmes[i].Link_Do_Filme}" target="_blank"></a>
         <div class="poster" >
+            <p id="year" class="ano">${mostraFilmes[i].ano}</p>
             <img src="${mostraFilmes[i].imagem}" alt="" class="poster_img" onmouseenter="hover(${i})" onmouseleave="noHover(${i})">
             <p id="write" class="titulo" >${mostraFilmes[i].nome}</p>
-          <a>
           <img src="https://cdn-icons-png.flaticon.com/512/2891/2891067.png" class="lixo" onclick="limpar(${i})">
         </div>`
 }
@@ -50,8 +50,10 @@ function noHover(i_) {
 }
 
 function limpar(pos) {
-  mostraFilmes.splice(pos, 1)
-  localStorage.setItem('dadosFilme', JSON.stringify(mostraFilmes))
+  if(confirm('Quer deletar essa midia mesmo?')){
+    mostraFilmes.splice(pos, 1)
+    localStorage.setItem('dadosFilme', JSON.stringify(mostraFilmes))
+  }
 }
 
 
