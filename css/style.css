@@ -100,6 +100,29 @@
         align-items: center;
         justify-content: center;
     }
+
+    .botao {
+        transition: 300ms;
+        background-color: #D1512D;
+        color: white;
+        padding: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-radius: 12px;
+        font-size: 15px;
+    }
+    
+    .botao:hover {
+        box-shadow: 0px 0px 12px black;
+        transition: 300ms;
+        background-color: #A73F22;
+        color: white;
+        padding: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-radius: 12px;
+        font-size: 15px;
+    }
 }
 
 ::placeholder {
@@ -220,7 +243,7 @@ footer img {
     background-size: contain;
 }
 
-#uploads{
+/* #uploads{
     display: flex;
     flex-wrap: wrap;
     font-size: 60px;
@@ -245,6 +268,10 @@ footer img {
     margin-left: 5px;
     margin-bottom: 5px;
     border: 5px solid black;
+}*/
+
+main li p {
+    margin-bottom: 20px;
 }
 
 /*Parte do footer*/
@@ -518,7 +545,7 @@ main .offer .mega {
 
 /*Parte do perfil*/
 
-.pfp {
+.pfp_work {
     width: 40px;
 }
 
@@ -577,5 +604,6 @@ main .offer .mega {
     width: 40px;
     height: 40px;
     position: relative;
-    top: -340px
+    top: -421px;
+    background-color: white;
 }
